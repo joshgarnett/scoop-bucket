@@ -1,0 +1,38 @@
+{
+  "architecture": {
+    "64bit": {
+      "extract_dir": "rustleaks-0.2.0-x86_64-pc-windows-msvc",
+      "hash": "e91d819c91f73aa2a5e412c06ade3185e218a120fce0e3bd31c73ca865c649b9",
+      "url": "https://github.com/joshgarnett/rustleaks/releases/download/v0.2.0/rustleaks-0.2.0-x86_64-pc-windows-msvc.tar.gz"
+    },
+    "arm64": {
+      "extract_dir": "rustleaks-0.2.0-aarch64-pc-windows-msvc",
+      "hash": "b8eeb14bbd9c4163a3516ebafd168cb0d42253b438547a9cdc8eed13976414f0",
+      "url": "https://github.com/joshgarnett/rustleaks/releases/download/v0.2.0/rustleaks-0.2.0-aarch64-pc-windows-msvc.tar.gz"
+    }
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "extract_dir": "rustleaks-$version-x86_64-pc-windows-msvc",
+        "hash": {
+          "url": "https://github.com/joshgarnett/rustleaks/releases/download/v$version/rustleaks-$version-x86_64-pc-windows-msvc.SHA256SUMS"
+        },
+        "url": "https://github.com/joshgarnett/rustleaks/releases/download/v$version/rustleaks-$version-x86_64-pc-windows-msvc.tar.gz"
+      },
+      "arm64": {
+        "extract_dir": "rustleaks-$version-aarch64-pc-windows-msvc",
+        "hash": {
+          "url": "https://github.com/joshgarnett/rustleaks/releases/download/v$version/rustleaks-$version-aarch64-pc-windows-msvc.SHA256SUMS"
+        },
+        "url": "https://github.com/joshgarnett/rustleaks/releases/download/v$version/rustleaks-$version-aarch64-pc-windows-msvc.tar.gz"
+      }
+    }
+  },
+  "bin": "rustleaks.exe",
+  "checkver": "github",
+  "description": "Secret scanner for Git repositories, folders, archives and standard input",
+  "homepage": "https://github.com/joshgarnett/rustleaks",
+  "license": "MIT",
+  "version": "0.2.0"
+}
